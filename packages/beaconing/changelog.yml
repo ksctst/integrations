@@ -1,6 +1,6 @@
 - version: "1.2.3"
   changes:
-    - description: Improve agent policy documentation
+    - description: Add agent policy documentation
       type: enhancement
       link: https://github.com/elastic/integrations/pull/12168
 - version: "1.2.2"
