@@ -8,7 +8,7 @@ categories:
   - kubernetes
 conditions:
   kibana:
-    version: "^8.16.0"
+    version: "^8.18.0"
   elastic:
     subscription: "basic"
 discovery:
