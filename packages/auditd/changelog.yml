@@ -3,7 +3,7 @@
   changes:
     - description: Allow enriched fields on more auditd log messages
       type: bugfix
-      link: https://github.com/elastic/integrations/pull/12278
+      link: https://github.com/elastic/integrations/pull/12284
 - version: "3.20.2"
   changes:
     - description: Use triple-brace Mustache templating when referencing variables in ingest pipelines.
