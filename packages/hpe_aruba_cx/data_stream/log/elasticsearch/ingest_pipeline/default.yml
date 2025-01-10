@@ -3045,7 +3045,6 @@ processors:
       field: "message"
       description: "Powered device requested power down on interface."
       pattern: "Powered device requested power down on interface %{aruba.interface.name} %{aruba.poe.duration}"
-        
 
   # Bluetooth Management events (80xx)
   # https://www.arubanetworks.com/techdocs/AOS-CX/10.07/HTML/5200-8214/Content/events/BLUETOOTH_MGMT.htm
@@ -3065,7 +3064,7 @@ processors:
         - "^Bluetooth device %{DATA:event.action}: %{MAC:client.mac}"
 
   # VXLAN events (81xx)
-  # https://www.arubanetworks.com/techdocs/AOS-CX/10.07/HTML/5200-8214/Content/events/BLUETOOTH_MGMT.htm
+  # https://www.arubanetworks.com/techdocs/AOS-CX/10.15/HTML/elmrg/Content/events/VXLAN.htm
   - grok:
       if: "['8101','8102','8103','8104'].contains(ctx.event?.code)"
       tag: vxlan_event_8101_8102_8103_8104
